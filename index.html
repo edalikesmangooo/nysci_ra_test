@@ -14,7 +14,7 @@
 
 	var myFunction = function() {
         changeImage();
-        var rand = Math.round(Math.random() * 2500) + 2500; // generate new time (between 2.5s and 5s)
+        var rand = Math.round(Math.random() * 30000) + 60000; // generate new time (between 2.5s and 5s)
         console.log(rand);
         setTimeout(myFunction, rand);
     }
