@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Rainbow Agents Prompt</title>
+</head>
+<body>
+	<img src="km3/1.png" id="mainImage">
+
+<script type="text/javascript">
+	function changeImage(){
+		var imageNumber = Math.floor(Math.random()*33) + 1;
+		document.getElementById("mainImage").src="km3/" + String(imageNumber) + ".png";
+	}
+
+
+	var myFunction = function() {
+        changeImage();
+        var rand = Math.round(Math.random() * 2500) + 2500; // generate new time (between 2.5s and 5s)
+        console.log(rand);
+        setTimeout(myFunction, rand);
+    }
+    myFunction();
+
+	
+</script>
+</body>
+
+</html>
